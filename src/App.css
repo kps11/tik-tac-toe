@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: antiquewhite;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container{
+  display: flex;
+  flex-direction: row;
+  height: 42em;
+  width:45em;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 5em;
+  margin-top: 5%;
 }
+
+.button{
+  height: 3rem;
+  width: 10rem;
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 2rem;
+}
+
+.winner{
+  color: red;
+  font-size: 30px;
+}
+
+.restartButton{
+  display: flex;
+  height: 2rem;
+  line-height: 2rem;
+  width: 80%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.popUpContainer{
+  z-index: 1;
+  position: absolute;
+  height: 52rem;
+  line-height: 50rem;
+  width: 50rem;
+  background-color: #fff;
+  text-align: center;
+  opacity: 1;
+  
+}
+.box{
+ align-items: center;
+ justify-content: center;
+ border: 1px solid #000; 
+ height:14em;
+ min-width: 14em;
+ font-weight: bold;
+ text-align: center;
+ line-height: 14em;
+}
+
